@@ -32,7 +32,19 @@ public class LinkedList {
             next = null; 
         } // Constructor 
     } 
-  
+    
+    
+    /* This function prints contents of  
+    linked list starting from head */
+    public void printList() 
+    { 
+        Node n = head; 
+        while (n != null) { 
+            Console.Write(n.data + " "); 
+            n = n.next; 
+        } 
+    }
+    
     /* method to create a simple linked list with 3 nodes*/
     public static void Main(String[] args) 
     { 
@@ -42,6 +54,8 @@ public class LinkedList {
         llist.head = new Node(1); 
         Node second = new Node(2); 
         Node third = new Node(3); 
+        
+        llist.printList();
   
         /* Three nodes have been allocated dynamically.  
         We have references to these three blocks as head,  
