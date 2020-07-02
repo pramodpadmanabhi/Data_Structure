@@ -93,3 +93,20 @@ public class LinkedList {
         +----+------+     +----+------+     +----+------+ */
     } 
 } 
+
+    //Insertion of Node
+    public void Push(int data)
+      //1.Creation of Node
+      //2.Assign Data
+          Node new_node=new Node(data);
+       //3.Assign new node address to head
+          new_node.next=head
+       //4.Assign head to new node
+          head=new_node
+       
+       *** Time Conplexity is O(1) as it does linear amount of work
+      
+    
+    }
+  
+
